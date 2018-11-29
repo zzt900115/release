@@ -40,8 +40,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <!-- druid阿里巴巴数据库连接池 -->
+        <!-- 事务 -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
@@ -63,11 +62,6 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.53</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-tx</artifactId>
-        </dependency>
-
 
     </dependencies>
 
@@ -81,13 +75,6 @@
     </build>
 
     <profiles>
-        <profile>
-            <!-- 生产环境 -->
-            <id>prod</id>
-            <properties>
-                <profiles.active>prod</profiles.active>
-            </properties>
-        </profile>
         <profile>
             <!-- 本地开发环境 -->
             <id>dev</id>
@@ -103,6 +90,13 @@
             <id>test</id>
             <properties>
                 <profiles.active>test</profiles.active>
+            </properties>
+        </profile>
+        <profile>
+            <!-- 生产环境 -->
+            <id>prod</id>
+            <properties>
+                <profiles.active>prod</profiles.active>
             </properties>
         </profile>
     </profiles>
