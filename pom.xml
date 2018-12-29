@@ -67,11 +67,7 @@
             <artifactId>spring-tx</artifactId>
             <version>5.0.7.RELEASE</version>
         </dependency>
-         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-tx</artifactId>
-            <version>5.0.7.RELEASE</version>
-        </dependency>
+
     </dependencies>
 
     <build>
@@ -92,12 +88,7 @@
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
-            </activation><dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-tx</artifactId>
-            <version>5.0.7.RELEASE</version>
-        </dependency>
-                 
+            </activation>
         </profile>
         <profile>
             <!-- 测试环境 -->
